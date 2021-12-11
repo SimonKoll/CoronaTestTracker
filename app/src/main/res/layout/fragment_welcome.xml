@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".welcomeFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:foregroundTint="#000000"
+            android:text="Corona Test Tracker"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <Button
+            android:id="@+id/btViewReportList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIEW REPORT LIST"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btCreateNewReport"
+            app:layout_constraintVertical_bias="0.48" />
+
+        <Button
+            android:id="@+id/btCreateNewReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE NEW REPORT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="503dp" />
+
+        <TextView
+            android:id="@+id/tvPlaceHaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="Parkplatz-Haidcenter"
+            app:layout_constraintStart_toStartOf="@+id/tvPlaceLeonding"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlaceLeonding" />
+
+        <TextView
+            android:id="@+id/tvPlaceLinz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="Linz Stadtplatz"
+            app:layout_constraintStart_toStartOf="@+id/progressBar"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+        <TextView
+            android:id="@+id/tvPlaceLeonding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="Leonding-Meixnerkreuzung"
+            app:layout_constraintStart_toStartOf="@+id/tvPlaceLinz"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlaceLinz" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="308dp"
+            android:layout_height="25dp"
+            android:background="#FFFFFF"
+            android:progress="70"
+            android:progressBackgroundTint="#E80505"
+            android:progressTint="#00FB04"
+            app:layout_constraintBottom_toTopOf="@+id/btCreateNewReport"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            app:layout_constraintVertical_bias="0.17" />
+
+        <TextView
+            android:id="@+id/tvCountLinz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvPlaceLinz"
+            app:layout_constraintEnd_toEndOf="@+id/progressBar" />
+
+        <TextView
+            android:id="@+id/tvCountLeonding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="508"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvPlaceLeonding"
+            app:layout_constraintEnd_toEndOf="@+id/tvCountLinz" />
+
+        <TextView
+            android:id="@+id/tvCountHaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="173"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tvPlaceHaid"
+            app:layout_constraintEnd_toEndOf="@+id/tvCountLeonding" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

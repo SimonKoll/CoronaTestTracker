@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".reportList">
+
+        <TextView
+            android:id="@+id/tvTitleReportList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Report List"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btNewReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Neuer Report"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btToWelcome"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btToWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Zu Welcome"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btNewReport"
+            app:layout_constraintTop_toTopOf="@+id/btNewReport" />
+
+        <LinearLayout
+            android:id="@+id/llReportList"
+            android:layout_width="345dp"
+            android:layout_height="557dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/btToWelcome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleReportList">
+
+            <TextView
+                android:id="@+id/tvReportListExample"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maskierte ID; YYYY-MM.DDTHH-mm; Ergebnis; Standort" />
+
+            <TextView
+                android:id="@+id/tvReportListExample2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maskierte ID; YYYY-MM.DDTHH-mm; Ergebnis; Standort" />
+
+            <TextView
+                android:id="@+id/tvReportListExample3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maskierte ID; YYYY-MM.DDTHH-mm; Ergebnis; Standort" />
+
+            <TextView
+                android:id="@+id/tvReportListExample4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maskierte ID; YYYY-MM.DDTHH-mm; Ergebnis; Standort" />
+
+            <TextView
+                android:id="@+id/tvReportListExample5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maskierte ID; YYYY-MM.DDTHH-mm; Ergebnis; Standort" />
+
+            <TextView
+                android:id="@+id/tvReportListExample6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maskierte ID; YYYY-MM.DDTHH-mm; Ergebnis; Standort" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

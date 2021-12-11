@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/fragment_inputfragment"
+        android:name="com.example.coronatesttracker.fragment_inputfragment"
+        android:label="fragment_inputfragment"
+        tools:layout="@layout/fragment_inputfragment" >
+        <action
+            android:id="@+id/action_fragment_inputfragment_to_fragment_reportList"
+            app:destination="@id/fragment_reportList" />
+        <action
+            android:id="@+id/action_fragment_inputfragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.coronatesttracker.welcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_fragment_inputfragment"
+            app:destination="@id/fragment_inputfragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_reportList"
+            app:destination="@id/fragment_reportList" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_reportList"
+        android:name="com.example.coronatesttracker.reportList"
+        android:label="fragment_report_list"
+        tools:layout="@layout/fragment_report_list" >
+        <action
+            android:id="@+id/action_fragment_reportList_to_fragment_inputfragment"
+            app:destination="@id/fragment_inputfragment" />
+        <action
+            android:id="@+id/action_fragment_reportList_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+</navigation>
